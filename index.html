@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Nexo · Gestão de demandas</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #111114;
+      background-image: radial-gradient(ellipse at 76% 92%, #651d2a 0, transparent 48%);
+      color: #f8f8fa;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+    main {
+      width: min(480px, 100%);
+      padding: clamp(28px, 7vw, 52px);
+      border: 1px solid #3b373c;
+      border-radius: 22px;
+      background: #18171a;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 42px; }
+    .brand svg { width: 28px; height: 32px; color: #ff7d8b; }
+    .brand span { font-size: 34px; font-weight: 750; line-height: 1; letter-spacing: -1.8px; }
+    .label { margin: 0 0 8px; color: #ff99a5; font-size: 12px; font-weight: 650; letter-spacing: .12em; }
+    h1 { margin: 0; font-size: clamp(30px, 7vw, 42px); line-height: 1.15; letter-spacing: -.035em; }
+    p { color: #c6c3c8; }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 13px 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: #c92f3e;
+      color: #fff;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    a:hover { background: #b32734; }
+    a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand" aria-label="Nexo">
+      <svg viewBox="0 0 36 40" aria-hidden="true"><path fill="currentColor" d="M3 36V4h8l14 21V4h8v32h-8L11 15v21Z"/></svg>
+      <span>nexo</span>
+    </div>
+    <p class="label">ACESSO RESTRITO</p>
+    <h1>Gestão de demandas</h1>
+    <p>Entre com o usuário autorizado pelo administrador da sua equipe.</p>
+    <!-- Substitua o endereço abaixo pela URL HTTPS do serviço nexo no Cloud Run. -->
+    <a href="https://SEU-SERVICO.run.app/">Acessar o Nexo <span aria-hidden="true">↗</span></a>
+  </main>
+</body>
+</html>
